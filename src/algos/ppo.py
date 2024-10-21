@@ -97,14 +97,8 @@ def run_ppo(args, use_tensorboard=False, use_wandb=False):
     while episode_number < args.max_episodes:
         total_reward = 0
         episode_length = -1
-        # print("Updating", update)
-        # if global_step >= args.total_timesteps:
-        #     break
-
+    
         for step in range(0, args.num_steps):
-            # global_step  += 1 * args.num_envs
-            # if global_step >= args.total_timesteps:
-            #     break
             obs[step] = next_obs
             dones[step] = next_done 
             action_masks[step] = torch.Tensor(action_mask)
