@@ -89,7 +89,7 @@ fig.tight_layout()
 foldername = './plots'
 create_folder(foldername)
 
-get_experiment_name = f"env_type_{param['env_type']}"
+# get_experiment_name = f"env_type_{param['env_type']}"
 # plt.savefig(f'{foldername}/learning_curve_{get_experiment_name}.pdf', dpi = 300)
-plt.savefig(f'{foldername}/learning_curve_{get_experiment_name}.png')
+plt.savefig(f'{foldername}/learning_curve.png')
 
