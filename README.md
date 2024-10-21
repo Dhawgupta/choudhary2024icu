@@ -1,4 +1,4 @@
-# The ICU-Sepsis Environment (Baseline Algorithm Implementation)
+# The ICU-Sepsis Environment (Baseline Algorithms Implementation)
 
 The **ICU-Sepsis** environment is a reinforcement learning environment that
 simulates the treatment of sepsis in an intensive care unit (ICU). The
