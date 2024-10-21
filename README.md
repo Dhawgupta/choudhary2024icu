@@ -25,7 +25,7 @@ Citation:
 
 The code is organized as follows:
 
-`experiments`: Contains the json files containing the hyperparameters and configurations for the different methods. 
+`experiments`: Contains the JSON files containing the hyperparameters and configurations for the different methods. 
 
 `src`: Contains the source code for different algorithms. 
 
@@ -33,7 +33,7 @@ The code is organized as follows:
 
 ### Running the code using json file. 
 
-For example an expermient specified in `experiments/debug.json` can be run using the following command. 
+For example an experiment specified in `experiments/debug.json` can be run using the following command. 
 
 ```bash
 python src/mainjson.py experiments/debug.json 0
@@ -42,14 +42,14 @@ The above command will run the first configuration in the `debug.json` file.
 
 
 ### Executing a sweep
-Using gnu parallel we can run multiple configurations in parallel. 
+Using GNU parallel we can run multiple configurations in parallel. 
 
 ```bash
 python run/local.py -p src/mainjson.py -j experiments/debug.json
 ``` 
 The above command will try to run all possible configurations in parallel. One can limit the number of threads based on their system using `-c` flag. 
 
-The results for the experiments are stored in `results` folder. Each file in the results folder store a single hyperparameter configuration with a single seed value. 
+The results for the experiments are stored in `results` folder. Each file in the results folder stores a single hyperparameter configuration with a single seed value. 
 
 #### Process results
 We then need to aggregate the results across different seeds using the following command. 
